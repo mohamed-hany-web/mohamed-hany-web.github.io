@@ -1,0 +1,64 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>نور | شموع يدوية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--plum:#3f2445;--lilac:#f5eef7;--rose:#d9a5b3;--gold:#c9973a;--soft:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Tajawal,Cairo,sans-serif;background:var(--lilac);color:var(--plum);line-height:1.8;font-size:17px}
+h1,h2,h3,.logo,.btn,.price{font-family:Cairo,sans-serif}
+.wrap{max-width:1120px;margin:auto;padding:0 24px}
+.top{background:var(--plum);color:#f2dff5;text-align:center;font-size:14px;padding:7px}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:70px}
+.logo{font-weight:900;font-size:26px;letter-spacing:1px}.logo span{color:var(--gold)}
+nav a{color:var(--plum);text-decoration:none;margin-inline-start:26px;font-weight:500}.cart{background:var(--plum);color:#fff;border-radius:999px;padding:8px 20px;font-family:Cairo;font-weight:700;font-size:15px}
+.crumb{font-size:14px;color:#8a6b90;padding:6px 0 16px}
+.prod{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center;padding-bottom:60px}
+.gallery{aspect-ratio:1;border-radius:32px;background:radial-gradient(circle at 50% 35%,#f8d9e2,#d9a5b3 60%,#a9739a);display:grid;place-items:center;position:relative;box-shadow:0 40px 60px -30px #3f244588}
+.badge{position:absolute;top:20px;right:20px;background:var(--gold);color:#fff;font-family:Cairo;font-weight:700;border-radius:999px;padding:4px 16px;font-size:14px}
+.rate{color:var(--gold);font-size:16px}.rate small{color:#8a6b90}
+h1{font-size:40px;font-weight:900;line-height:1.3;margin:6px 0 10px}
+.price{font-size:34px;font-weight:900;margin:14px 0}.price s{font-size:20px;color:#a58aa9;margin-inline-start:10px;font-weight:500}
+.lbl{font-weight:700;margin:16px 0 8px;font-family:Cairo}.opts{display:flex;gap:10px;flex-wrap:wrap}
+.opts span{border:2px solid #e2cde6;background:#fff;border-radius:14px;padding:8px 18px;font-weight:500}.opts .on{border-color:var(--plum);background:var(--plum);color:#fff}
+.btn{display:block;text-align:center;background:var(--plum);color:#fff;padding:16px;border-radius:16px;font-weight:700;text-decoration:none;margin-top:22px;font-size:18px}
+.perks{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px;font-size:14px;text-align:center;color:#6e5073}.perks div{background:#fff;border-radius:14px;padding:10px 4px}
+section{padding:60px 0;background:#fff}h2{font-size:34px;font-weight:900;margin-bottom:26px;text-align:center}
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.note{background:var(--lilac);border-radius:22px;padding:26px;text-align:center}.note b{font-family:Cairo;font-size:20px;display:block;margin-bottom:4px}
+.rev{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.rev div{background:#fff;border-radius:22px;padding:24px}.rev .rate{margin-bottom:6px}
+footer{padding:28px 0;text-align:center;font-size:14px;color:#8a6b90}
+@media(max-width:800px){.prod,.notes,.rev{grid-template-columns:1fr}h1{font-size:30px}nav{display:none}.gallery{max-width:340px;margin:auto}}
+
+/* motion */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.st .rv,.rv.in{opacity:1;transform:none}
+.btn{position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}.btn:hover{transform:translateY(-3px);box-shadow:0 14px 26px -10px #0006}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,#fff5 50%,transparent 65%);transform:translateX(120%);transition:transform .7s}.btn:hover::after{transform:translateX(-120%)}
+.card,.note,.rev>div{transition:transform .3s,box-shadow .3s}
+nav a{position:relative}nav a::after{content:"";position:absolute;bottom:-2px;right:0;width:0;height:2px;background:currentColor;transition:width .3s}nav a:hover::after{width:100%}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes fadein{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}*{animation:none!important}}
+
+.gallery{animation:floaty 7s ease-in-out infinite}
+.gallery svg path{transform-origin:60px 60px;animation:flick 1.6s ease-in-out infinite alternate}
+@keyframes flick{0%{transform:scale(1,1) rotate(-2deg)}100%{transform:scale(.94,1.07) rotate(2deg)}}
+.badge{animation:floaty 3s ease-in-out infinite}
+.opts span{transition:.25s;cursor:pointer}.opts span:hover{transform:translateY(-3px);border-color:var(--plum)}
+.note:hover,.rev>div:hover{transform:translateY(-6px);box-shadow:0 20px 30px -20px #3f2445aa}.perks div{transition:.3s}.perks div:hover{transform:translateY(-3px)}
+h1,.rate{animation:fadein .9s both}
+</style></head><body>
+<div class="top">شحن مجاني للطلبات فوق ٥٠٠ ج</div>
+<header><div class="wrap"><div class="logo">نور<span>.</span></div><nav><a href="#">الشموع</a><a href="#">الهدايا</a><a href="#">من نحن</a></nav><div class="cart">السلة (٠)</div></div></header>
+<div class="wrap"><div class="crumb">الرئيسية / الشموع / لافندر</div>
+<div class="prod"><div class="gallery"><div class="badge">الأكثر مبيعًا</div><svg width="46%" viewBox="0 0 120 200" fill="none"><ellipse cx="60" cy="186" rx="50" ry="8" fill="#0002"/><rect x="18" y="86" width="84" height="96" rx="12" fill="#f8efe6"/><rect x="18" y="86" width="84" height="22" rx="10" fill="#e7d3c1"/><rect x="57" y="62" width="6" height="26" rx="3" fill="#3f2445"/><path d="M60 14c14 20 16 34 0 46-16-12-14-26 0-46z" fill="#f3c04e"/><path d="M60 30c7 10 8 17 0 23-8-6-7-13 0-23z" fill="#fff4c9"/><text x="60" y="150" text-anchor="middle" font-family="Cairo" font-weight="900" font-size="22" fill="#3f2445">نور</text></svg></div>
+<div><div class="rate">★★★★★ <small>(٤٨ تقييم)</small></div><h1>شمعة لافندر<br>يدوية الصنع</h1><p>شمع صويا طبيعي بريحة اللافندر الهادية. بتولع حوالي ٤٠ ساعة وبتخلي البيت أهدى.</p>
+<div class="price">180 ج <s>220 ج</s></div><div class="lbl">الحجم</div><div class="opts"><span>صغيرة 100 جم</span><span class="on">وسط 200 جم</span><span>كبيرة 300 جم</span></div>
+<a class="btn" href="#">أضف للسلة</a><div class="perks"><div>✓ صويا ١٠٠٪</div><div>✓ فتيلة قطن</div><div>✓ شحن لكل المحافظات</div></div></div></div></div>
+<section><div class="wrap"><h2>مكونات الريحة</h2><div class="notes"><div class="note"><b>لافندر</b>هدوء ونوم أعمق</div><div class="note"><b>فانيليا</b>دفا خفيف</div><div class="note"><b>أرز</b>لمسة خشبية ناعمة</div></div></div></section>
+<section style="background:var(--lilac)"><div class="wrap"><h2>آراء العملاء</h2><div class="rev"><div><div class="rate">★★★★★</div>"الريحة تجنن وبتفضل في الأوضة." — سارة</div><div><div class="rate">★★★★★</div>"تغليف شيك وهدية مناسبة جدًا." — منى</div></div></div></section>
+<footer>© نور · نموذج تصميم توضيحي (Sample) والتقييمات تجريبية</footer><script>
+(function(){if(location.search.indexOf('static')>-1)document.documentElement.classList.add('st');var s=document.querySelectorAll('.card,.note,.rev>div,.perks div,h2,.sub,.cta,.stats>div,.prod>div,.opts,.price');
+s.forEach(function(e,i){e.classList.add('rv');e.style.setProperty('--d',((i%3)*0.12)+'s')});
+if(!('IntersectionObserver' in window)){s.forEach(function(e){e.classList.add('in')});return}
+var o=new IntersectionObserver(function(a){a.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}})},{threshold:.12});
+s.forEach(function(e){o.observe(e)});})();
+</script></body></html>
