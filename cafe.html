@@ -1,0 +1,67 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ركن البن | محمصة وكافيه</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2a1810;--cream:#f7eee2;--sand:#efe0cc;--caramel:#c98a4b;--sage:#6f7f5b;--card:#fffaf2}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Tajawal,Cairo,sans-serif;background:var(--cream);color:var(--ink);line-height:1.8;font-size:17px}
+h1,h2,h3,.logo,.btn{font-family:Cairo,sans-serif}
+.wrap{max-width:1120px;margin:auto;padding:0 24px}
+header{position:sticky;top:0;z-index:5;background:#f7eee2ee;backdrop-filter:blur(8px);border-bottom:1px solid #e4d3bd}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:68px}
+.logo{font-weight:900;font-size:24px;display:flex;gap:10px;align-items:center}.logo i{width:34px;height:34px;border-radius:10px;background:var(--ink);display:grid;place-items:center}
+nav a{color:var(--ink);text-decoration:none;margin-inline-start:26px;font-weight:500}
+.btn{display:inline-block;background:var(--ink);color:var(--cream);padding:13px 30px;border-radius:999px;font-weight:700;text-decoration:none;font-size:16px}
+.btn.alt{background:var(--caramel);color:var(--ink)}
+.hero{padding:70px 0 40px}.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.eyebrow{color:var(--sage);font-weight:700;letter-spacing:.5px;margin-bottom:10px}
+h1{font-size:56px;line-height:1.25;font-weight:900;margin-bottom:18px}h1 span{color:var(--caramel)}
+.hero p{font-size:19px;max-width:480px;color:#5b4536;margin-bottom:28px}
+.art{aspect-ratio:1;border-radius:46% 54% 50% 50%/55% 45% 55% 45%;background:radial-gradient(circle at 30% 25%,#e0a869,#b26f33 55%,#7a4a22);display:grid;place-items:center;box-shadow:0 30px 60px -20px #7a4a2288}
+.stats{display:flex;gap:34px;margin-top:34px}.stats b{font-family:Cairo;font-size:28px;display:block;color:var(--ink)}.stats small{color:#7a6552}
+section{padding:70px 0}h2{font-size:38px;font-weight:900;margin-bottom:8px}.sub{color:#7a6552;margin-bottom:36px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--card);border:1px solid #ecdcc6;border-radius:22px;padding:28px;transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:0 18px 30px -18px #2a181066}
+.card .ic{width:54px;height:54px;border-radius:16px;background:var(--sand);display:grid;place-items:center;margin-bottom:16px;font-size:26px}
+.card h3{font-size:21px;margin-bottom:4px}.price{margin-top:12px;font-family:Cairo;font-weight:900;color:var(--caramel);font-size:22px}
+.dark{background:var(--ink);color:var(--cream)}.dark .sub{color:#c9b59d}.dark .card{background:#3a2518;border-color:#4a3122}.dark .card .ic{background:#4a3122}
+.cta{background:var(--sage);color:#fff;border-radius:30px;padding:50px;text-align:center}.cta h2{color:#fff}.cta p{margin-bottom:22px;opacity:.9}
+footer{padding:30px 0;text-align:center;color:#7a6552;font-size:14px}
+@media(max-width:800px){.hero .wrap{grid-template-columns:1fr}h1{font-size:38px}.grid{grid-template-columns:1fr}nav{display:none}.art{max-width:300px;margin:auto}.stats{gap:20px}.cta{padding:34px 20px}}
+
+/* motion */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.st .rv,.rv.in{opacity:1;transform:none}
+.btn{position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}.btn:hover{transform:translateY(-3px);box-shadow:0 14px 26px -10px #0006}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,#fff5 50%,transparent 65%);transform:translateX(120%);transition:transform .7s}.btn:hover::after{transform:translateX(-120%)}
+.card,.note,.rev>div{transition:transform .3s,box-shadow .3s}
+nav a{position:relative}nav a::after{content:"";position:absolute;bottom:-2px;right:0;width:0;height:2px;background:currentColor;transition:width .3s}nav a:hover::after{width:100%}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes fadein{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}*{animation:none!important}}
+
+.art{animation:floaty 6s ease-in-out infinite}
+.hero h1,.hero .eyebrow,.hero p{animation:fadein .9s both}.hero h1{animation-delay:.15s}.hero p{animation-delay:.3s}
+.art svg path:last-of-type{animation:steam 3s ease-in-out infinite}
+@keyframes steam{0%,100%{opacity:.3;transform:translateY(0)}50%{opacity:1;transform:translateY(-8px)}}
+.card:hover{transform:translateY(-6px) rotate(-.4deg)}.card:hover .ic{transform:scale(1.12) rotate(-6deg)}.card .ic{transition:transform .3s}
+</style></head><body>
+<header><div class="wrap"><div class="logo"><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f7eee2" stroke-width="2" stroke-linecap="round"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9zM17 10h2a2 2 0 0 1 0 4h-2M8 3v3M12 3v3"/></svg></i>ركن البن</div><nav><a href="#menu">المنيو</a><a href="#why">ليه إحنا</a><a href="#visit">زورنا</a></nav><a class="btn" href="#visit">احجز ترابيزة</a></div></header>
+<div class="hero"><div class="wrap"><div><div class="eyebrow">محمصة وكافيه · القاهرة</div><h1>قهوتك المظبوطة<br>في <span>حتة هادية</span></h1><p>بن محمص طازة كل صباح، وحلويات بيتي، وجو يخليك تقعد ساعة زيادة.</p><a class="btn alt" href="#menu">شوف المنيو</a>
+<div class="stats"><div><b>٣ سنين</b><small>من الطعم الأصلي</small></div><div><b>+٢٠</b><small>نوع بن</small></div><div><b>٤.٩★</b><small>تقييم الزباين</small></div></div></div>
+<div class="art"><svg width="62%" viewBox="0 0 200 200" fill="none"><ellipse cx="100" cy="170" rx="70" ry="10" fill="#0003"/><path d="M40 70h100v50a45 45 0 0 1-45 45h-10a45 45 0 0 1-45-45V70z" fill="#f7eee2"/><path d="M140 80h14a20 20 0 0 1 0 40h-14" stroke="#f7eee2" stroke-width="12" fill="none"/><path d="M50 78h80v16H50z" fill="#7a4a22"/><path d="M80 52c-8-10 8-14 0-26M110 52c-8-10 8-14 0-26" stroke="#f7eee2" stroke-width="5" stroke-linecap="round"/></svg></div></div></div>
+<section id="menu"><div class="wrap"><h2>أشهر المشروبات</h2><p class="sub">اختيارات زبايننا الدايمة</p><div class="grid">
+<div class="card"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9zM17 10h2a2 2 0 0 1 0 4h-2M8 3v3M12 3v3"/></svg></div><h3>إسبريسو دوبل</h3><p>قوي ومركز لمحبي الطعم الحقيقي.</p><div class="price">45 ج</div></div>
+<div class="card"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1 18H8L7 3zM7.5 9h9"/></svg></div><h3>لاتيه فانيليا</h3><p>ناعم وحلو ومظبوط على الصبح.</p><div class="price">60 ج</div></div>
+<div class="card"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10h12v4a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5v-4zM17 11h2a2 2 0 0 1 0 4h-2M9 5c0-2 4-2 4 0"/></svg></div><h3>قهوة تركي</h3><p>على أصولها وعلى الفحم.</p><div class="price">35 ج</div></div></div></div></section>
+<section id="why" class="dark"><div class="wrap"><h2>ليه ركن البن؟</h2><p class="sub">تفاصيل صغيرة بتفرق</p><div class="grid">
+<div class="card"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-9M12 12C12 7 8 5 4 5c0 5 3 7 8 7zM12 14c0-4 3-6 8-6 0 5-3 7-8 6z"/></svg></div><h3>بن طازة</h3><p>بنحمص كل صباح وبنطحن وقت الطلب.</p></div>
+<div class="card"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a15 15 0 0 1 20 0M5 13a10 10 0 0 1 14 0M8.5 16.5a5 5 0 0 1 7 0M12 20h.01"/></svg></div><h3>واي فاي سريع</h3><p>مناسب للشغل والمذاكرة من غير قلق.</p></div>
+<div class="card"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16v-7H4v7zM4 13c0-3 3-4 4-6M12 13c0-3 3-4 4-6M8 7V4M16 7V4"/></svg></div><h3>حلويات بيتي</h3><p>بتتعمل يوميًا بمكونات نضيفة.</p></div></div></div></section>
+<section id="visit"><div class="wrap"><div class="cta"><h2>تعالى زورنا</h2><p>يوميًا من ٩ الصبح لـ ١٢ بالليل · واتساب: 01000000000</p><a class="btn" href="#">ابعتلنا رسالة</a></div></div></section>
+<footer>© ركن البن · نموذج تصميم توضيحي (Sample) وليس عميل حقيقي</footer><script>
+(function(){if(location.search.indexOf('static')>-1)document.documentElement.classList.add('st');var s=document.querySelectorAll('.card,.note,.rev>div,.perks div,h2,.sub,.cta,.stats>div,.prod>div,.opts,.price');
+s.forEach(function(e,i){e.classList.add('rv');e.style.setProperty('--d',((i%3)*0.12)+'s')});
+if(!('IntersectionObserver' in window)){s.forEach(function(e){e.classList.add('in')});return}
+var o=new IntersectionObserver(function(a){a.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}})},{threshold:.12});
+s.forEach(function(e){o.observe(e)});})();
+</script></body></html>
